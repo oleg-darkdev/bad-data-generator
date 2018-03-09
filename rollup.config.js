@@ -4,7 +4,7 @@ import babel from 'rollup-plugin-babel';
 export default {
   input: 'src/main.js',
   output: {
-    file: 'dist/badGen.js',
+    file: 'index.js',
     format: 'cjs'
   },
   plugins: [

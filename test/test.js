@@ -37,7 +37,7 @@
 */
 
 // pattern.test(massiveEmail[i]) - for validate
-var pattern = /[`!?{}=*;><^%$#`~=|]/gi,
+var pattern = /[`!?{}=*;><^%$#~=|]/gi,
 	badPattern = '`!?{}=*;><^%$#`~=|\/',
 	firstName = [
 		'Donald',
@@ -183,37 +183,57 @@ var pattern = /[`!?{}=*;><^%$#`~=|]/gi,
 
 						random text
 */
-// let testText = (howSymbol) => {
+let testText = (howSymbol) => {
 		
-// 	text = (howSymbol = 500, badSymbols = badPattern ) => {
-// 		// укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент.
-// 	textData = textData.substring(0, howSymbol);
+	text = (howSymbol = 500, badSymbols = badPattern ) => {
+		// укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент.
+	textData = textData.substring(0, howSymbol);
 	
-// 	getRandomInRange = (min, max) => {
-//         return Math.floor(Math.random() * (max - min + 1)) + min;
-//     };; 
+	getRandomInRange = (min, max) => {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
     	 
-// 	return textData.replace(textData.charAt(getRandomInRange(0, textData.length)), 
-// 	        badSymbols.charAt(getRandomInRange(0, badSymbols.length)))
-// 	}
+	return textData.replace(textData.charAt(getRandomInRange(0, textData.length)), 
+	        badSymbols.charAt(getRandomInRange(0, badSymbols.length)))
+	}
 
-// 	// console.log(text()) 		// 500 symbols
-// 	// console.log(text().length)  // 500 symbols
+	// console.log(text()) 		// 500 symbols
+	// console.log(text().length)  // 500 symbols
 
-// 	console.log(text(50)) 					
-// 	console.log(pattern.test(text(50))) 	// true - non valid symbol detected!
-// } 
+	console.log(text(50)) 					
+	console.log(pattern.test(text(50))) 	// true - non valid symbol detected!
+} 
 
-// testText(120)
-
-
+testText(120)
 
 
+/* 
 
+						random phone
+*/
 
+// let testPhone = () => {
+// 	let phone = (codeCountry = 375, howNumberAfter = 8 , badSymbols = badPattern ) => {
+// 		let telephoneNumber = [],
+// 			getRandomInRange = (min, max) => {
+// 			  return Math.floor(Math.random() * (max - min + 1)) + min;
+// 			};
+// 		telephoneNumber.push(codeCountry);
+	  
+// 		for (let index = 0; index < howNumberAfter; index++) {
+// 			telephoneNumber.push(getRandomInRange(0, 9))
+// 		 }
+		
+// 		 console.log(telephoneNumber = telephoneNumber.join(''));
+			 
+// 		return telephoneNumber.replace(telephoneNumber.charAt(getRandomInRange(0, telephoneNumber.length)), 
+// 				badSymbols.charAt(getRandomInRange(0, badSymbols.length)))
+// 	  }
+// 	console.log(phone())
+	
+// }
 
-
-
+// testPhone();
 
 
 

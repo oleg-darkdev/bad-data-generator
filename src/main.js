@@ -1,10 +1,10 @@
 /* 
-                                     g generator 
+                                     good generator 
 */
-import {gName}  from './lib/name.js';
-import {gEmail} from './lib/email.js';
-import {gPhone} from './lib/phone.js';
-import {gText}  from  './lib/text.js';
+// import {gName}  from './lib/name.js';
+// import {gEmail} from './lib/email.js';
+// import {gPhone} from './lib/phone.js';
+// import {gText}  from  './lib/text.js';
 /* 
                                      bad generator 
 */
@@ -12,7 +12,7 @@ import {gText}  from  './lib/text.js';
 import {name}  from './lib/name.js';
 import {email} from './lib/email.js';
 import {phone} from './lib/phone.js';
-import {text }from  './lib/text.js';
+import {text}from  './lib/text.js';
 /* use for custom vocabulary */
 // import {customName}  from './lib/name.js';
 // import {customEmail} from './lib/email.js';
@@ -52,12 +52,26 @@ let badGen = {
   // customText
 };
 
-console.log(badGen.name());
-console.log(badGen.email());
-console.log(badGen.phone());
-console.log(badGen.text());
+// console.log(badGen.name());
+// console.log(badGen.email());
+// console.log(badGen.phone());
+// console.log(badGen.text());
 
 // console.log(badGen.customName());
 // console.log(badGen.customEmail());
 // console.log(badGen.customPhone());
 // console.log(badGen.customText());
+
+
+export default badGen; 
+// export { badGen}; //, goodGen
+
+
+
+// ьаги 
+
+
+/* 
+мыло валидное на выходе
+
+*/
