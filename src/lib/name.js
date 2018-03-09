@@ -12,15 +12,18 @@ import secondName from '../data/second_name';   // data-array
 /* 
                 good name generator
 */
-// const goodName = ( ) => 
-// {
-//     let getRandomInRange = (min, max) => {
-//       return Math.floor(Math.random() * (max - min + 1)) + min;
-//     }
+const goodName = ( ) => 
+{
+    let getRandomInRange = (min, max) => {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
   
-//   // let nr = getRandomInRange(0, 100);  // random number in range at 0 for 100
-//   return firstName[getRandomInRange(0, 100)] + secondName[getRandomInRange(0, 100)]
-// }
+  // let nr = getRandomInRange(0, 100);  // random number in range at 0 for 100
+  return firstName[getRandomInRange(0, 100)] + secondName[getRandomInRange(0, 100)]
+}
+/* 
+                bad email generator
+*/
 /* 
                 use default vocabulary
 */
@@ -47,5 +50,5 @@ const name = ( ) =>
 //   return firstName[getRandomInRange(0, 100)] + secondName[getRandomInRange(0, 100)]
 // }
   
-export default name(); //goodName()
+export {name, gName };
 // export default { name, customName};
