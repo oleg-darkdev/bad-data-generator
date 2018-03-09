@@ -20,13 +20,14 @@ import textData from '../data/text_fish.js';         // data-array
 */
 let text = (howSymbol = 500 , badSymbols = badPattern ) => {
     // укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент.
-    let textData = textData.substring(0, howSymbol),
-        getRandomInRange = (min, max) => {
+    let text = textData.substring(0, howSymbol);
+
+    let getRandomInRange = (min, max) => {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     };; 
-    
-    return textData.replace(textData.charAt(getRandomInRange(0, textData.length)), 
-            badSymbols.charAt(getRandomInRange(0, badSymbols.length)))
+    	 
+	return text.replace(text.charAt(getRandomInRange(0, text.length)), 
+	        badSymbols.charAt(getRandomInRange(0, badSymbols.length)))
 }
 /* 
               use custom vocabulary
