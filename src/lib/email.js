@@ -4,7 +4,7 @@
 */
 // export default { email, customEmail };
 
-import bad_pattern   from '../data/bad_pattern';     // bad(non-valid symbols)
+import badPattern   from '../data/bad_pattern';     // bad(non-valid symbols)
 import emailDomen   from '../data/email_domen';     // data-array
 import firstName    from '../data/first_name';      // data-array 
 import secondName   from '../data/second_name';     // data-array 

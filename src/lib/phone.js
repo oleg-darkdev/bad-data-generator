@@ -4,7 +4,7 @@
 
 */
 
-import bad_pattern   from '../data/bad_pattern';     // bad(non-valid symbols)
+import badPattern   from '../data/bad_pattern';     // bad(non-valid symbols)
 /* 
                 good phone generator
 */
@@ -53,7 +53,7 @@ let phone = (codeCountry = 375, howNumberAfter = 8 ) => {
 */
 let phone = (codeCountry = 375, howNumberAfter = 8 ) => {
 
-  
+
 }
 
 

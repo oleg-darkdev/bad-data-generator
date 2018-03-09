@@ -3,7 +3,7 @@
 
 */
 
-import bad_pattern   from '../data/bad_pattern';     // bad(non-valid symbols)
+import badPattern   from '../data/bad_pattern';     // bad(non-valid symbols)
 import textData from '../data/text_fish.js';         // data-array
 /* 
                 good text generator
