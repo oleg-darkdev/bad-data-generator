@@ -1,31 +1,28 @@
 
-function testBadEmailValidation() {
+// function testBadEmailValidation() {
 	
-	let bagGen = require("bad-email-gen"),
-		valid,pattern =  /\w{2}[^`!?{}=*!;><^]+\S\@\S\w{1}\S\.\S\w{2}/gi,
-		massiveEmail = [],i;
+// 	let bagGen = require("bad-email-gen"),
+// 		valid,pattern =  /\w{2}[^`!?{}=*!;><^]+\S\@\S\w{1}\S\.\S\w{2}/gi,
+// 		massiveEmail = [],i;
 
 
-	for (i=0; i<15;i++){
-		massiveEmail.push(bagGen());
-	}
+// 	for (i=0; i<15;i++){
+// 		massiveEmail.push(bagGen());
+// 	}
 
-	for (i=0; i<15;i++){
-		if(pattern.test(massiveEmail[i]) == false ){
-					console.log(' Система взломана плохим мылом !! Ахтунг')
-			}else {
-					console.log(' Тестирование № ' + i +' прошло успешно!')	
-				}
-	}
+// 	for (i=0; i<15;i++){
+// 		if(pattern.test(massiveEmail[i]) == false ){
+// 					console.log(' Система взломана плохим мылом !! Ахтунг')
+// 			}else {
+// 					console.log(' Тестирование № ' + i +' прошло успешно!')	
+// 				}
+// 	}
 	
 
-	return console.log(' Тестирование плохих имэйлов закончено!');
+// 	return console.log(' Тестирование плохих имэйлов закончено!');
 
-	// console.log(massiveEmail); // плохой массив мыл
-}
-
-
-
+// 	// console.log(massiveEmail); // плохой массив мыл
+// }
 
 
 // testBadEmailValidation(); // плохие мыла преймущественно в генераторе
@@ -34,46 +31,50 @@ function testBadEmailValidation() {
 /* 
 			test random function
 */
-let testgetRandomInRange = (min, max ) => {
-	let getRandomInRange = (min, max) => {
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-	  }
+// let testgetRandomInRange = (min, max ) => {
+// 	let getRandomInRange = (min, max) => {
+// 		return Math.floor(Math.random() * (max - min + 1)) + min;
+// 	  }
 	
-	for (let index = 0; index < 10; index++) {
-		console.log(getRandomInRange(min, max ))
+// 	for (let index = 0; index < 10; index++) {
+// 		console.log(getRandomInRange(min, max ))
 		
-	}
-}
+// 	}
+// }
 
 // testgetRandomInRange(0, 20)
 
+/* 
 
+									GOOD GENERATOR
+
+*/
 
 /* 
 				random number
 */
-let phone = (codeCountry = 375, howNumberAfter = 8 ) => {
-    let telephoneNumber = [],
-        getRandomInRange = (min, max) => {
-          return Math.floor(Math.random() * (max - min + 1)) + min;
-        };
+// let phone = (codeCountry = 375, howNumberAfter = 8 ) => {
+//     let telephoneNumber = [],
+//         getRandomInRange = (min, max) => {
+//           return Math.floor(Math.random() * (max - min + 1)) + min;
+//         };
   
-    telephoneNumber.push(codeCountry);
-    // console.log(telephoneNumber)
+//     telephoneNumber.push(codeCountry);
+//     // console.log(telephoneNumber)
 
-    for (let index = 0; index < howNumberAfter; index++) {
-        telephoneNumber.push(getRandomInRange(0, 9))
-        // console.log(getRandomInRange(0, 9));
-     }
-
-
-    // console.log(telephoneNumber)
-    // console.log(telephoneNumber.join(''))
-
-    console.log( telephoneNumber.join(''));
+//     for (let index = 0; index < howNumberAfter; index++) {
+//         telephoneNumber.push(getRandomInRange(0, 9))
+//         // console.log(getRandomInRange(0, 9));
+//      }
 
 
-}
+//     // console.log(telephoneNumber)
+//     // console.log(telephoneNumber.join(''))
+
+//     console.log( telephoneNumber.join(''));
+
+
+// }
 
 
 // phone(37529, 6);
@@ -83,18 +84,109 @@ let phone = (codeCountry = 375, howNumberAfter = 8 ) => {
 
 						random text
 */
-let testText = (howSymbol) => {
-	let textData = 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
-		text = (howSymbol = 500 ) => {
-		// укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент.
-		return textData.substring(0, howSymbol); 
-	}
+// let testText = (howSymbol) => {
+// 	let textData = 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.',
+// 		text = (howSymbol = 500 ) => {
+// 		// укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент.
+// 		return textData.substring(0, howSymbol); 
+// 	}
 		
-	console.log(text(howSymbol))
-	console.log(text(howSymbol).length)
-} 
+// 	console.log(text(howSymbol))
+// 	console.log(text(howSymbol).length)
+// } 
 
 // testText()
+
+
+
+/* 
+
+									BAD GENERATOR
+
+*/
+
+// pattern.test(massiveEmail[i]) - for validate
+// let badPattern = /[^`!?{}=*;><^%$#`~=|\/]/gi;
+
+var badPattern = '`!?{}=*;><^%$#`~=|\/',
+	firstName = [
+		'Donald',
+		'Chester',
+		'Peter',
+		'Campbell',
+		'Jack',
+		'Denis',
+		'Hugo',
+		'Simpson',
+		'Mary',
+		'Patricia',
+		'Linda',
+		'Barbara',
+		'Elizabeth'],
+	secondName = [
+		'Donald',
+		'Chester',
+		'Peter',
+		'Campbell',
+		'Jack',
+		'Denis',
+		'Hugo',
+		'Simpson',
+		'Mary',
+		'Patricia',
+		'Linda',
+		'Barbara',
+		'Elizabeth',
+		'Jennifer',
+		'Maria',
+		'Susan',
+		'Margaret',
+		'Dorothy'];
+
+
+const name = ( ) => {	
+    let getRandomInRange = (min, max) => {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+	let fullName = '';
+		//console.log( firstName[getRandomInRange(0, 100)])
+  console.log( fullName = firstName[getRandomInRange(0, 10)] + secondName[getRandomInRange(0, 10)])
+  		//console.log(fullName = fullName.toString());
+  console.log(typeof(firstName) )
+		//console.log(fullName.charAt(getRandomInRange(0, 10)))
+		//console.log( badPattern.charAt(getRandomInRange(0, 20)))
+  console.log( fullName.replace(fullName.charAt(getRandomInRange(0, 10)), badPattern.charAt(getRandomInRange(0, 20))))
+
+
+}
+
+// name()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

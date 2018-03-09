@@ -3,15 +3,15 @@
 
 */
 
-import badArray from '../data/bad_array';       // bad(non-valid symbols)
+import bad_pattern   from '../data/bad_pattern';     // bad(non-valid symbols)
 import textData from '../data/text_fish.js';         // data-array
 /* 
                 good text generator
 */
-let gText = (howSymbol = 500 ) => {
-    // укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент.
-    return textData.substring(0, howSymbol); 
-}
+// let gText = (howSymbol = 500 ) => {
+//     // укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент.
+//     return textData.substring(0, howSymbol); 
+// }
 /* 
                 bad email generator
 */
@@ -26,8 +26,7 @@ let text = (howSymbol = 500 ) => {
               use custom vocabulary
 */
 let customText = (howSymbol = 500 ) => {
-    // укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент.
-    return textData.substring(0, howSymbol); 
+
 }
 
 
