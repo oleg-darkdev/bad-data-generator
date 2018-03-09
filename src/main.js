@@ -19,7 +19,23 @@ import text from  './lib/text.js';
 
 */
 
-let badGen = {
+// let badGen = {
+//   /* работают по дефолту */
+//   // name()
+//   name,
+//   email,
+//   phone,
+//   text
+
+// //   /*  принимают кастомный словарь */
+// //   customName(),
+// //   customEmail() ,
+// //   customPhone(),
+// //   customText()
+// };
+
+
+let goodGen = {
   /* работают по дефолту */
   // name()
   name,
@@ -33,6 +49,10 @@ let badGen = {
 //   customPhone(),
 //   customText()
 };
+
+
+
+
 
 // console.log(badGen.name);
 // console.log(badGen.email);
