@@ -8,20 +8,20 @@ import badArray from '../data/bad_array';     // bad(non-valid symbols)
 /* 
                 good phone generator
 */
-let gPhone = (codeCountry = 375, howNumberAfter = 8 ) => {
-  let telephoneNumber = [],
-      getRandomInRange = (min, max) => {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      };
+// let gPhone = (codeCountry = 375, howNumberAfter = 8 ) => {
+//   let telephoneNumber = [],
+//       getRandomInRange = (min, max) => {
+//         return Math.floor(Math.random() * (max - min + 1)) + min;
+//       };
 
-  telephoneNumber.push(codeCountry);
+//   telephoneNumber.push(codeCountry);
 
-  for (let index = 0; index < howNumberAfter; index++) {
-      telephoneNumber.push(getRandomInRange(0, 9))
-   }
+//   for (let index = 0; index < howNumberAfter; index++) {
+//       telephoneNumber.push(getRandomInRange(0, 9))
+//    }
   
-   return telephoneNumber.join('');
-}
+//    return telephoneNumber.join('');
+// }
 /* 
                 bad email generator
 */
@@ -46,17 +46,22 @@ let phone = (codeCountry = 375, howNumberAfter = 8 ) => {
 /* 
               use custom vocabulary
 */
-// let customPhone = (codeCountry, howNumberAfter, customSymbols ) => {
-//     let telephoneNumber += codeCountry;
-//     for (let index = 0; index < howNumberAfter; index++) {
-//       let nr = getRandomInRange(0, 9);          // random number in range at 0 for 100
-//       telephoneNumber += nr
-//    }
-//       return telephoneNumber
-// } 
+let phone = (codeCountry = 375, howNumberAfter = 8 ) => {
+  let telephoneNumber = [],
+      getRandomInRange = (min, max) => {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      };
+
+  telephoneNumber.push(codeCountry);
+
+  for (let index = 0; index < howNumberAfter; index++) {
+      telephoneNumber.push(getRandomInRange(0, 9))
+   }
+  
+   return telephoneNumber.join('');
+}
 
 
 
 
-export  { phone , gPhone }; 
-// export { phone, customPhone };
+export  { phone , gPhone , customPhone}; 

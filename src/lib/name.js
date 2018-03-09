@@ -12,15 +12,15 @@ import secondName from '../data/second_name';   // data-array
 /* 
                 good name generator
 */
-const goodName = ( ) => 
-{
-    let getRandomInRange = (min, max) => {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+// const gName = ( ) => 
+// {
+//     let getRandomInRange = (min, max) => {
+//       return Math.floor(Math.random() * (max - min + 1)) + min;
+//     }
   
-  // let nr = getRandomInRange(0, 100);  // random number in range at 0 for 100
-  return firstName[getRandomInRange(0, 100)] + secondName[getRandomInRange(0, 100)]
-}
+//   // let nr = getRandomInRange(0, 100);  // random number in range at 0 for 100
+//   return firstName[getRandomInRange(0, 100)] + secondName[getRandomInRange(0, 100)]
+// }
 /* 
                 bad email generator
 */
@@ -40,15 +40,14 @@ const name = ( ) =>
 /* 
               use custom vocabulary
 */
-// const customName = (customSymbols ) => 
-// {
-//     let getRandomInRange = (min, max) => {
-//       return Math.floor(Math.random() * (max - min + 1)) + min;
-//     }
+const customName  = ( ) => 
+{
+    let getRandomInRange = (min, max) => {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
   
-//   // let nr = getRandomInRange(0, 100);  // random number in range at 0 for 100
-//   return firstName[getRandomInRange(0, 100)] + secondName[getRandomInRange(0, 100)]
-// }
+  // let nr = getRandomInRange(0, 100);  // random number in range at 0 for 100
+  return firstName[getRandomInRange(0, 100)] + secondName[getRandomInRange(0, 100)]
+}
   
-export {name, gName };
-// export default { name, customName};
+export {name, gName, customName };

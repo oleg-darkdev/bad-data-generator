@@ -25,12 +25,10 @@ let text = (howSymbol = 500 ) => {
 /* 
               use custom vocabulary
 */
-// let customText = (howSymbol, customSymbols) => {
-//     // укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент, добавляет символы из пользовательского шаблона
-//     return 
-// }
+let customText = (howSymbol = 500 ) => {
+    // укарачивает весь текст из массива по дефолту  до 500 символов, если не передан аргумент.
+    return textData.substring(0, howSymbol); 
+}
 
 
-
-export  { text, gText }; 
-// export { text , customText };
+export  { text, gText, customText }; 
