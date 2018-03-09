@@ -39,8 +39,8 @@ let phone = (codeCountry = 375, howNumberAfter = 8 , badSymbols = badPattern ) =
       telephoneNumber.push(getRandomInRange(0, 9))
    }
   
-  telephoneNumber = telephoneNumber.toString();
-       
+  telephoneNumber = telephoneNumber.join('');     
+
   return telephoneNumber.replace(telephoneNumber.charAt(getRandomInRange(0, telephoneNumber.length)), 
           badSymbols.charAt(getRandomInRange(0, badSymbols.length)))
 }
