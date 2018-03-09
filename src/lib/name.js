@@ -27,8 +27,7 @@ import secondName from '../data/second_name';   // data-array
 /* 
                 use default vocabulary
 */
-const name = ( ) => 
-{
+const name = ( badSymbols = badPattern) => {
     let fullName = '',
         getRandomInRange = (min, max) => {
       return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -36,16 +35,16 @@ const name = ( ) =>
     fullName = firstName[getRandomInRange(0, 100)] + secondName[getRandomInRange(0, 100)];   
     
     return fullName.replace(fullName.charAt(getRandomInRange(0, fullName.length)), 
-                            badPattern.charAt(getRandomInRange(0, badPattern.length)))
+            badSymbols.charAt(getRandomInRange(0, badSymbols.length)))
 }
 /* 
               use custom vocabulary
 */
-const customName  = ( ) =>  {
+// const customName  = ( ) =>  {
   
-}
+// }
   
-export {name, gName, customName };
+export {name, gName }; //, customName
 
 
 

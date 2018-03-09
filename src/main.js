@@ -9,22 +9,20 @@ import {gText}  from  './lib/text.js';
                                      bad generator 
 */
 /* use for default vocabulary */
-// import {name}  from './lib/name.js';
-// import {email} from './lib/email.js';
-// import {phone} from './lib/phone.js';
-// import {text }from  './lib/text.js';
+import {name}  from './lib/name.js';
+import {email} from './lib/email.js';
+import {phone} from './lib/phone.js';
+import {text }from  './lib/text.js';
 /* use for custom vocabulary */
-import {customName}  from './lib/name.js';
-import {customEmail} from './lib/email.js';
-import {customPhone} from './lib/phone.js';
-import {customText} from  './lib/text.js';
+// import {customName}  from './lib/name.js';
+// import {customEmail} from './lib/email.js';
+// import {customPhone} from './lib/phone.js';
+// import {customText} from  './lib/text.js';
 /* 
           
                 Так выглядит обьект с методами, методы импортировать из других файлов.
 
 */
-
-
 /* 
                         Хороший обьект( валидный)
 */
@@ -43,21 +41,21 @@ import {customText} from  './lib/text.js';
 */
 let badGen = {
   /* работают по дефолту */
-  // name,
-  // email,
-  // phone,
-  // text
+  name,
+  email,
+  phone,
+  text
   /*  принимают кастомный словарь */
-  customName,
-  customEmail,
-  customPhone,
-  customText
+  // customName,
+  // customEmail,
+  // customPhone,
+  // customText
 };
 
-// console.log(badGen.name());
-// console.log(badGen.email());
-// console.log(badGen.phone());
-// console.log(badGen.text());
+console.log(badGen.name());
+console.log(badGen.email());
+console.log(badGen.phone());
+console.log(badGen.text());
 
 // console.log(badGen.customName());
 // console.log(badGen.customEmail());
