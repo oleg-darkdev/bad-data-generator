@@ -1,8 +1,8 @@
 {
-  "name": "bad-email-generator",
+  "name": "bad-data-generator",
   "version": "0.1.0",
-  "description": "Generation the bad format email addresses",
-  "main": "node_modules/bad-email-gen/index.js",
+  "description": "Generation the bad format data for test forms on site",
+  "main": "node_modules/bad-data-generator/index.js",
   "dependencies": {},
   "devDependencies": {
     "mocha": "^5.0.1",
@@ -24,7 +24,7 @@
   },
   "keywords": [
     "generator",
-    "bad-emails"
+    "bad-data"
   ],
   "author": "olet_templ",
   "license": "ISC",
