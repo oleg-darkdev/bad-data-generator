@@ -1,6 +1,6 @@
 {
   "name": "bad-data-generator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Generation the bad format data for test forms on site",
   "main": "node_modules/bad-data-generator/index.js",
   "dependencies": {},
