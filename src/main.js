@@ -1,61 +1,51 @@
-/* 
-                                     good generator 
-*/
-// import {gName}  from './lib/name.js';
-// import {gEmail} from './lib/email.js';
-// import {gPhone} from './lib/phone.js';
-// import {gText}  from  './lib/text.js';
-/* 
-                                     bad generator 
-*/
+/**
+ * @description good generator
+ */
+import { gName } from './src/lib/text';
+import { gEmail } from './src/lib/text';
+import { gPhone } from './src/lib/text';
+import { gText } from './src/lib/text';
+/**
+ * @description bad generator
+ */
 /* use for default vocabulary */
-import {name}  from './lib/name.js';
-import {email} from './lib/email.js';
-import {phone} from './lib/phone.js';
-import {text}from  './lib/text.js';
+import { bName } from './src/lib/name';
+import { bEmail } from './src/lib/email';
+import { bPhone } from './src/lib/phone';
+import { bText } from './src/lib/text';
 /* use for custom vocabulary */
-// import {customName}  from './lib/name.js';
-// import {customEmail} from './lib/email.js';
-// import {customPhone} from './lib/phone.js';
-// import {customText} from  './lib/text.js';
-/* 
-          
-                Так выглядит обьект с методами, методы импортировать из других файлов.
-
-*/
-/* 
-                        Хороший обьект( валидный)
-*/
-// let goodGen = {
-//   gName,
-//   gEmail,
-//   gPhone,
-//   gText
-// };
-// console.log(goodGen.gName());
-// console.log(goodGen.gEmail());
-// console.log(goodGen.gPhone);
-// console.log(goodGen.gText);
-/* 
-                        Нехороший обьект(не валидный)
-*/
-let badGen = {
-  /* работают по дефолту */
-  name,
-  email,
-  phone,
-  text
-  /*  принимают кастомный словарь */
-  // customName,
-  // customEmail,
-  // customPhone,
-  // customText
+// import {customName} from './src/lib/name.js';
+// import {customEmail} from './src/lib/email.js';
+// import {customPhone} from './src/lib/phone.js';
+// import {customText} from './src/lib/text';
+/**
+ * @description Нехороший обьект(не валидный)
+ */
+/*  принимают кастомный словарь */
+// customName,
+// customEmail,
+// customPhone,
+// customText
+const badGen = {
+  bName,
+  bEmail,
+  bPhone,
+  bText,
+  gName,
+  gEmail,
+  gPhone,
+  gText
 };
 
-// console.log(badGen.name());
-// console.log(badGen.email());
-// console.log(badGen.phone());
-// console.log(badGen.text());
+// console.log(badGen.bName());
+// console.log(badGen.bEmail());
+// console.log(badGen.bPhone());
+// console.log(badGen.bText());
+
+// console.log(badGen.gName());
+// console.log(badGen.gEmail());
+// console.log(badGen.gPhone());
+// console.log(badGen.gText());
 
 // console.log(badGen.customName());
 // console.log(badGen.customEmail());
@@ -63,15 +53,4 @@ let badGen = {
 // console.log(badGen.customText());
 
 
-export default badGen; 
-// export { badGen}; //, goodGen
-
-
-
-// ьаги 
-
-
-/* 
-мыло валидное на выходе
-
-*/
+export default badGen;
